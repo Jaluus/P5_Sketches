@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(50, 50, 50);
+
+    font-size: 2vh;
+}
+
+
+#defaultCanvas0 {
+    border-style: solid;
+    background-color: black;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+}
+canvas {
+display: block;
+}
+
+#popup{
+    font-family: monospace, monospace;
+    background-color: #28292e;
+    color: #8f9098;
+    width: auto;
+    height: auto;
+    z-index: 500;
+    border-radius: 5px;
+    padding: 1.5vh;
+    text-align: center;
+    border: 1px rgb(79, 79, 79) solid;
+    left : 1vh;
+    bottom : 1vh;
+    position: fixed;
+    animation: popin 10s forwards;
+    animation-delay: 4s;
+    opacity: 0;
+   }
+
+   @keyframes popin {
+    0% {
+        transform: translate(0, 110%);
+        opacity: 1;
+    }
+    5% {
+        transform: translate(0, 0);
+        opacity: 1;
+
+    }
+    90% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 110%);
+        opacity: 0;
+    }
+}
